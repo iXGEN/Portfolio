@@ -5,7 +5,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedIn,
   AiFillYoutube,
-} from "react-icons/bs";
+} from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,7 +45,9 @@ export default function Home() {
               cultures.
             </p>
           </div>
-          <div></div>
+          <div>
+            <AiFillTwitterCircle />
+          </div>
         </section>
       </main>
     </div>
