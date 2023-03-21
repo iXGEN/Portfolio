@@ -8,6 +8,9 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,8 +55,45 @@ export default function Home() {
             <AiFillLinkedin />
             <AiOutlineMail />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
-            {/* <Image src={deved} /> */}
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={deved} layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              With 700+ hours of coding, I am comfortable working with{" "}
+              <span className="text-teal-500">
+                HTML, CSS, Javascript, React, Redux, React Native, Tailwind,
+                NodeJS, ExpressJS, PostgreSQL, MongoDB, and many more!
+              </span>
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I would love to be part of a very friendly and with intelectual
+              curiosity team.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src={design} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Front End Development
+              </h3>
+              <p className="py-2">
+                Creating functional and beautiful interfaces with Responsive
+                Design
+              </p>
+              <h4 className="py-4 text-teal-600">Technologies</h4>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">React Native for Mobile</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
+              <p className="text-gray-800 py-1">Redux</p>
+              <p className="text-gray-800 py-1">And of course HTML and CSS</p>
+              <h4 className="py-4 text-teal-600">Working Tools</h4>
+              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Trello</p>
+            </div>
           </div>
         </section>
       </main>
