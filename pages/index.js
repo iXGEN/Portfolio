@@ -7,7 +7,6 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
 import profilepic from "../public/profilepic.jpeg";
 import design from "../public/design.png";
 import code from "../public/code.png";
@@ -204,15 +203,15 @@ export default function Home() {
                   alt="Figma"
                 />
               </a>{" "}
-              {/* <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
               <a href="https://www.trello.com/" target="_blank">
                 <Image
                   src="https://i.ibb.co/4fGFN9S/trello-logo-removebg-preview.png"
-                  width={50}
-                  height={50}
+                  width={70}
+                  height={70}
                   alt="Trello"
                 />
-              </a> */}
+              </a>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
@@ -275,7 +274,7 @@ export default function Home() {
                 />
               </a>
 
-              <h4 className="py-4 text-teal-600">Cloud?</h4>
+              <h4 className="py-4 text-teal-600">Cloud platforms</h4>
 
               <p className="text-gray-800 py-1 dark:text-gray-300">
                 Amazon Web Services
@@ -288,14 +287,21 @@ export default function Home() {
                   alt="Amazon Web Services"
                 />
               </a>
-
               <p className="text-gray-800 py-1 dark:text-gray-300">Firebase</p>
+              <a href="https://aws.amazon.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/firebase.png"
+                  width={50}
+                  height={50}
+                  alt="Firebase"
+                />
+              </a>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
-                Front End Development
+                Other Skills
               </h3>
               <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
