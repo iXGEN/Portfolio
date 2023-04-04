@@ -33,7 +33,9 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">Developed by Igna</h1>
+            <h1 className="text-xl font-burtons dark:text-gray-300">
+              Developed by Igna
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -55,8 +57,10 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 md:text-6xl">
               Ignacio Barra
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">Full Stack Developer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
+              Full Stack Developer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               Hi, I'm a Full Stack Developer. I would say very friendly and a
               team worker, i have mixed my skills from psychology to this new
               career path in tech, i really like traveling and meeting different
@@ -69,97 +73,116 @@ export default function Home() {
             <AiOutlineMail />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <Image
+              src={deved}
+              alt="Deved Image"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-gray-300">
+              Services I offer
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               With 800+ hours of coding, I am comfortable working with{" "}
               <span className="text-teal-500">
                 HTML, CSS, Javascript, React, Redux, React Native, Tailwind,
                 NodeJS, ExpressJS, PostgreSQL, MongoDB, and many more!
               </span>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               I would love to be part of a very friendly and with intelectual
               curiosity team.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Front End Development
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
                 Design
               </p>
               <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React Native for Mobile</p>
-              <p className="text-gray-800 py-1">Tailwind</p>
-              <p className="text-gray-800 py-1">Redux</p>
-              <p className="text-gray-800 py-1">And of course HTML and CSS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                React Native for Mobile
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                And of course HTML and CSS
+              </p>
               <h4 className="py-4 text-teal-600">Working Tools</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Trello</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Front End Development
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
                 Design
               </p>
               <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React Native for Mobile</p>
-              <p className="text-gray-800 py-1">Tailwind</p>
-              <p className="text-gray-800 py-1">Redux</p>
-              <p className="text-gray-800 py-1">And of course HTML and CSS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                React Native for Mobile
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                And of course HTML and CSS
+              </p>
               <h4 className="py-4 text-teal-600">Working Tools</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Trello</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Front End Development
               </h3>
-              <p className="py-2">
+              <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
                 Design
               </p>
               <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">React Native for Mobile</p>
-              <p className="text-gray-800 py-1">Tailwind</p>
-              <p className="text-gray-800 py-1">Redux</p>
-              <p className="text-gray-800 py-1">And of course HTML and CSS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                React Native for Mobile
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                And of course HTML and CSS
+              </p>
               <h4 className="py-4 text-teal-600">Working Tools</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Trello</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               With 800+ hours of coding, I am comfortable working with{" "}
               <span className="text-teal-500">
                 HTML, CSS, Javascript, React, Redux, React Native, Tailwind,
                 NodeJS, ExpressJS, PostgreSQL, MongoDB, and many more!
               </span>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               I would love to be part of a very friendly and with intelectual
               curiosity team.
             </p>
