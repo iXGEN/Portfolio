@@ -133,7 +133,7 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
                   width={50}
                   height={50}
-                  alt="React"
+                  alt="React Native"
                 />
               </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
@@ -142,7 +142,7 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
                   width={50}
                   height={50}
-                  alt="React"
+                  alt="Redux"
                 />
               </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
@@ -151,7 +151,7 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg"
                   width={50}
                   height={50}
-                  alt="React"
+                  alt="Tailwind"
                 />
               </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">HTML5</p>
@@ -160,7 +160,7 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
                   width={50}
                   height={50}
-                  alt="React"
+                  alt="HTML5"
                 />
               </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">CSS3</p>
@@ -169,9 +169,22 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
                   width={50}
                   height={50}
-                  alt="React"
+                  alt="CSS3"
                 />
               </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Bootstrap</p>
+              <a
+                href="https://getbootstrap.com/docs/3.4/javascript/"
+                target="_blank"
+              >
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
+                  width={50}
+                  height={50}
+                  alt="CSS3"
+                />
+              </a>
+
               <h4 className="py-4 text-teal-600">Working Tools</h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
               <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
