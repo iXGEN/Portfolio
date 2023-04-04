@@ -265,9 +265,30 @@ export default function Home() {
                   alt="MySQL"
                 />
               </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">MongoDB</p>
+              <a href="https://www.mongodb.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="MongoDB"
+                />
+              </a>
 
               <h4 className="py-4 text-teal-600">Cloud?</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">AWS</p>
+
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Amazon Web Services
+              </p>
+              <a href="https://aws.amazon.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="Amazon Web Services"
+                />
+              </a>
+
               <p className="text-gray-800 py-1 dark:text-gray-300">Firebase</p>
             </div>
 
