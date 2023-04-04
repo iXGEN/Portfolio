@@ -8,7 +8,10 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import profilepic from "../public/profilepic.jpeg";
-import design from "../public/design.png";
+
+import frontEnd from "../public/frontEnd.jpeg";
+import backEnd from "../public/backEnd.jpg";
+import softSkills from "../public/softSkills.jpeg";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
@@ -17,7 +20,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import RNative from "../public/RNative.png";
+
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -105,10 +108,15 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
-              <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Front End Development
               </h3>
+              <Image
+                src={frontEnd}
+                width={250}
+                height={250}
+                className="rounded-full"
+              />
               <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
                 Design
@@ -150,6 +158,15 @@ export default function Home() {
                   width={50}
                   height={50}
                   alt="React"
+                />
+              </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">NextJS</p>
+              <a href="https://nextjs.org/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/nextjs.png"
+                  width={50}
+                  height={50}
+                  alt="NextJS"
                 />
               </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">
@@ -215,10 +232,16 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Back End Development
               </h3>
+              <Image
+                src={backEnd}
+                width={250}
+                height={250}
+                className="rounded-full"
+              />
+
               <p className="py-2 dark:text-gray-300">
                 Building the logic for the server side of the application,
                 creating usefull RESTful API's
@@ -299,10 +322,16 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-              <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
                 Other Skills
               </h3>
+              <Image
+                src={softSkills}
+                width={250}
+                height={250}
+                className="rounded-full"
+              />
+
               <p className="py-2 dark:text-gray-300">
                 Creating functional and beautiful interfaces with Responsive
                 Design
