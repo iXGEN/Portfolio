@@ -115,6 +115,35 @@ export default function Home() {
                 Design
               </p>
               <h4 className="py-4 text-teal-600">Technologies</h4>
+              <p className="text-gray-800 py-1 dark:text-gray-300">HTML5</p>
+              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="HTML5"
+                />
+              </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">CSS3</p>
+              <a href="https://www.w3schools.com/css" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="CSS3"
+                />
+              </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Javascript
+              </p>
+              <a href="https://www.javascript.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
+                  width={50}
+                  height={50}
+                  alt="Javascript"
+                />
+              </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
               <a href="https://reactjs.org/" target="_blank">
                 <Image
@@ -124,7 +153,6 @@ export default function Home() {
                   alt="React"
                 />
               </a>
-
               <p className="text-gray-800 py-1 dark:text-gray-300">
                 React Native
               </p>
@@ -154,24 +182,6 @@ export default function Home() {
                   alt="Tailwind"
                 />
               </a>
-              <p className="text-gray-800 py-1 dark:text-gray-300">HTML5</p>
-              <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-                <Image
-                  src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
-                  width={50}
-                  height={50}
-                  alt="HTML5"
-                />
-              </a>
-              <p className="text-gray-800 py-1 dark:text-gray-300">CSS3</p>
-              <a href="https://www.w3schools.com/css" target="_blank">
-                <Image
-                  src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
-                  width={50}
-                  height={50}
-                  alt="CSS3"
-                />
-              </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">Bootstrap</p>
               <a
                 href="https://getbootstrap.com/docs/3.4/javascript/"
@@ -181,13 +191,28 @@ export default function Home() {
                   src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
                   width={50}
                   height={50}
-                  alt="CSS3"
+                  alt="Bootstrap"
                 />
               </a>
-
               <h4 className="py-4 text-teal-600">Working Tools</h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
+              <a href="https://www.figma.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg"
+                  width={50}
+                  height={50}
+                  alt="Figma"
+                />
+              </a>{" "}
+              {/* <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
+              <a href="https://www.trello.com/" target="_blank">
+                <Image
+                  src="https://i.ibb.co/4fGFN9S/trello-logo-removebg-preview.png"
+                  width={50}
+                  height={50}
+                  alt="Trello"
+                />
+              </a> */}
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
@@ -196,22 +221,54 @@ export default function Home() {
                 Back End Development
               </h3>
               <p className="py-2 dark:text-gray-300">
-                Creating functional and beautiful interfaces with Responsive
-                Design
+                Building the logic for the server side of the application,
+                creating usefull RESTful API's
               </p>
               <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
+
+              <p className="text-gray-800 py-1 dark:text-gray-300">NodeJS</p>
+              <a href="https://nodejs.org" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="NodeJS"
+                />
+              </a>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Express</p>
+              <a href="https://expressjs.com" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="Express"
+                />
+              </a>
               <p className="text-gray-800 py-1 dark:text-gray-300">
-                React Native for Mobile
+                PostgreSQL
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">
-                And of course HTML and CSS
-              </p>
-              <h4 className="py-4 text-teal-600">Working Tools</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Trello</p>
+              <a href="https://www.postgresql.org/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="PostgreSQL"
+                />
+              </a>
+
+              <p className="text-gray-800 py-1 dark:text-gray-300">MySQL</p>
+              <a href="https://www.mysql.com/" target="_blank">
+                <Image
+                  src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg"
+                  width={50}
+                  height={50}
+                  alt="MySQL"
+                />
+              </a>
+
+              <h4 className="py-4 text-teal-600">Cloud?</h4>
+              <p className="text-gray-800 py-1 dark:text-gray-300">AWS</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Firebase</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
