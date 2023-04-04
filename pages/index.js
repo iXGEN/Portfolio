@@ -69,10 +69,9 @@ export default function Home() {
               Full Stack Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-              Hi, I'm a Full Stack Developer. I would say very friendly and a
-              team worker, i have mixed my skills from psychology to this new
-              career path in tech, i really like traveling and meeting different
-              cultures.
+              Hi👋 I would say i'm very friendly and a team worker, i have mixed
+              my skills from psychology to this new career path in tech, i
+              really like traveling and meeting different cultures.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -92,18 +91,45 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">
-              Services I offer
+              Services I offer 👨‍💻
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              With 800+ hours of coding, I am comfortable working with{" "}
+              As a full stack developer, I offer a wide range of services,
+              including:
+              <ul>
+                <li>
+                  Web application development: I can develop web applications
+                  using a variety of programming languages, frameworks, and
+                  platforms to create highly functional and responsive web
+                  applications.
+                </li>
+                <li>
+                  Mobile application development: I can build mobile
+                  applications that are optimized for different platforms like
+                  Android and iOS to provide users with a seamless experience.
+                </li>
+                <li>
+                  API development and integration: I can develop APIs to
+                  integrate your software applications with other third-party
+                  applications to improve functionality and efficiency.
+                </li>
+                <li>
+                  Maintenance and support: I can provide ongoing maintenance and
+                  support services to ensure that your software applications are
+                  running smoothly and efficiently.
+                </li>
+              </ul>
+              I am committed to delivering high-quality and cost-effective
+              solutions that help businesses achieve their objectives and
+              succeed in today's competitive market.
+              <br></br>
+              <br></br> With 800+ hours of coding, I am confident working with a
+              variety of technologies and frameworks such as{" "}
               <span className="text-teal-500">
-                HTML, CSS, Javascript, React, Redux, React Native, Tailwind,
-                NodeJS, ExpressJS, PostgreSQL, MongoDB, and many more!
+                HTML5, CSS3, Javascript, React, NextJS, React Native, Redux,
+                Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL,
+                MongoDB, and many more!
               </span>
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              I would love to be part of a very friendly and with intelectual
-              curiosity team.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -326,16 +352,21 @@ export default function Home() {
                 Creating functional and beautiful interfaces with Responsive
                 Design
               </p>
-              <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1 dark:text-gray-300">React</p>
+              <h4 className="py-4 text-teal-600">Soft Skills</h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">
-                React Native for Mobile
+                Effective Communication
               </p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Redux</p>
               <p className="text-gray-800 py-1 dark:text-gray-300">
-                And of course HTML and CSS
+                Team Worker
               </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Self taught
+              </p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Empathy</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">
+                Open-Mindedness
+              </p>
+
               <h4 className="py-4 text-teal-600">Version control</h4>
               <p className="text-gray-800 py-1 dark:text-gray-300">
                 GIT, Github
@@ -363,15 +394,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              With 800+ hours of coding, I am comfortable working with{" "}
-              <span className="text-teal-500">
-                HTML, CSS, Javascript, React, Redux, React Native, Tailwind,
-                NodeJS, ExpressJS, PostgreSQL, MongoDB, and many more!
-              </span>
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              I would love to be part of a very friendly and with intelectual
-              curiosity team.
+              Here you can find some of the projects that i've worked in{" "}
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -405,24 +428,6 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
