@@ -12,7 +12,7 @@ import profilepic from "../public/profilepic.jpeg";
 import frontEnd from "../public/frontEnd.jpeg";
 import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
-import web1 from "../public/web1.png";
+import piDogsImg from "../public/piDogsImg.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
@@ -413,7 +413,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
-                src={web1}
+                src={piDogsImg}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -423,24 +423,6 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
