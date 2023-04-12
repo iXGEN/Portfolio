@@ -12,14 +12,10 @@ import profilepic from "../public/profilepic.jpeg";
 import frontEnd from "../public/frontEnd.jpeg";
 import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 import { useState } from "react";
 
@@ -27,6 +23,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
+  const twitterLink = "https://twitter.com/IgnaBarraZagal";
+  const emailLink = "dev.barrazagal@gmail.com";
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText(emailLink);
+    alert("Email copied to clipboard!");
+  };
   return (
     <div
       className={`font-sans ${
@@ -74,11 +77,21 @@ export default function Home() {
               really like traveling and meeting different cultures.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiOutlineMail />
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 transform-gpu">
+            <AiFillTwitterCircle
+              onClick={() => window.open(twitterLink, "_blank")}
+              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
+            />
+            <AiFillLinkedin
+              onClick={() => window.open(linkedinLink, "_blank")}
+              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
+            />
+            <AiOutlineMail
+              onClick={copyEmail}
+              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
+            />
           </div>
+
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image
               src={profilepic}
@@ -93,7 +106,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-gray-300">
               Services I offer 👨‍💻
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
+            <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
               As a full stack developer, I offer a wide range of services,
               including:
               <ul>
@@ -130,7 +143,7 @@ export default function Home() {
                 Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL,
                 MongoDB, and many more!
               </span>
-            </p>
+            </div>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
