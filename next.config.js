@@ -10,6 +10,12 @@ const nextConfig = {
       "1000logos.net",
     ],
   },
+  future: {
+    webpack5: true,
+  },
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 module.exports = nextConfig;

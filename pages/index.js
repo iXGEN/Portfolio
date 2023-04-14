@@ -415,10 +415,11 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <a href="https://pi-dogs-ixgen.vercel.app/">
-                <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300 hover:transform hover:scale-110 transition duration-200">
                   The Dogs Web App{" "}
                 </p>
               </a>
+
               <Image
                 src={piDogsImg}
                 className="rounded-lg object-cover"
@@ -488,10 +489,11 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <a href="https://www.youtube.com/watch?v=-TH3UsyZDH8&ab_channel=Ignacio">
-                <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300 hover:transform hover:scale-110 transition duration-200">
                   Find A Home Mobile App{" "}
                 </p>
               </a>
+
               <Image
                 src={findAHome}
                 className="rounded-lg object-cover"
