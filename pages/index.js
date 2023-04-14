@@ -472,6 +472,19 @@ export default function Home() {
                 necessary information is included. This feature allows users to
                 contribute to the application by adding new breeds.
               </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Project Role: Full Stack Developer
+              </p>
+              <ul className="text-1xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                <li> Create from scratch the Web App</li>
+                <li>Design the UI </li>
+                <li>Consume an API</li>
+                <li>Create a relational database with SQL</li>
+                <li> Create the back-end routes</li>
+                <li>Connect Front and Back End with Redux Actions</li>
+                <li>Test, maintain, and find bugs in the App</li>
+                <li>Deploy the Web App</li>
+              </ul>
             </div>
             <div className="basis-1/3 flex-1">
               <a href="https://www.youtube.com/watch?v=-TH3UsyZDH8&ab_channel=Ignacio">
