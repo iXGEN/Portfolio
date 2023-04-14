@@ -440,7 +440,6 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
-
               <Image
                 src={responsive}
                 className="rounded-lg object-cover"
@@ -448,6 +447,31 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Technologies:
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                React, Redux, CSS Modules, NodeJS, ExpressJS, SQL, PostgreSQL{" "}
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Description:
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Web application designed to provide information about various
+                dog breeds, with the ability to sort them alphabetically (A-Z or
+                Z-A) or by weight, and filter them based on their temperament or
+                if they were created by a user. The application also includes a
+                search bar to make it easier to find specific breeds. Web
+                application features a fully responsive design, ensuring that
+                users can easily access it on any device, from desktop computers
+                to mobile phones. Users can access more information about
+                different dog breeds, with each breed presented with a detailed
+                card that includes relevant information, from weight, height,
+                lifespan characteristics to temperaments. Users can also create
+                new dog breeds using a controlled form that ensures all
+                necessary information is included. This feature allows users to
+                contribute to the application by adding new breeds.
+              </p>
             </div>
             <div className="basis-1/3 flex-1">
               <a href="https://www.youtube.com/watch?v=-TH3UsyZDH8&ab_channel=Ignacio">
@@ -469,6 +493,39 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Technologies:
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                React Native, Redux, Tailwind, NodeJS, ExpressJS, MongoDB,
+                Amazon Web Services, Firebase, Google Auth, Figma, Trello{" "}
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Description:
+              </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Mobile app available on both Android and iOS platforms, and aims
+                to help homeless pets find loving homes. Non-registered users
+                can browse through the available pets for adoption, while
+                registered users can create a profile with a profile picture,
+                description, and details about what they can offer to pets.
+                These users can contact the owners of published pets in order to
+                adopt them, and once an agreement has been made, they can rate
+                each other using a star-based system and leave comments. The app
+                allows users to publish new homeless pets that need a home,
+                which includes the ability to upload a profile picture, a
+                gallery of photos, a description, and estimated age. Pets are
+                displayed on the home screen based on how long they've been
+                waiting for a home, with those waiting the longest appearing
+                first. Users can apply filters to find pets by type (dogs, cats,
+                or other), size, or location based on GPS and a kilometer input.
+                Another important feature is the ability for users to report any
+                suspicious or inappropriate activity related to pet postings,
+                such as someone trying to sell a pet. Another feature is the
+                admin panel that allows to monitor user statistics and take
+                action if needed, including banning users who have received a
+                high number of reports or deleting pet posts.{" "}
+              </p>
             </div>
           </div>
         </section>
