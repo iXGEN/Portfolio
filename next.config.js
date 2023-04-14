@@ -3,7 +3,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["hackernoon.com", "profilinator.rishav.dev", "i.ibb.co"],
+    domains: [
+      "hackernoon.com",
+      "profilinator.rishav.dev",
+      "i.ibb.co",
+      "1000logos.net",
+    ],
   },
 };
 

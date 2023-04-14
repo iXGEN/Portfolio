@@ -396,7 +396,7 @@ export default function Home() {
               </a>
               <a href="https://github.com/iXGEN" target="_blank">
                 <Image
-                  src="https://img.shields.io/badge/github-%2324292e.svg"
+                  src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.jpg"
                   width={50}
                   height={50}
                   alt="Github"
@@ -447,13 +447,13 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+              <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Technologies:
               </p>
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 React, Redux, CSS Modules, NodeJS, ExpressJS, SQL, PostgreSQL{" "}
               </p>
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+              <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
@@ -493,14 +493,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+              <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Technologies:
               </p>
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 React Native, Redux, Tailwind, NodeJS, ExpressJS, MongoDB,
                 Amazon Web Services, Firebase, Google Auth, Figma, Trello{" "}
               </p>
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+              <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
