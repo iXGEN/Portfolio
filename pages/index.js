@@ -407,7 +407,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-              Here you can find some of the projects that i've worked in{" "}
+              Here you can find my projects{" "}
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
