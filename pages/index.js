@@ -504,28 +504,32 @@ export default function Home() {
                 Description:
               </p>
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
-                Mobile app available on both Android and iOS platforms, and aims
-                to help homeless pets find loving homes. Non-registered users
-                can browse through the available pets for adoption, while
-                registered users can create a profile with a profile picture,
-                description, and details about what they can offer to pets.
-                These users can contact the owners of published pets in order to
-                adopt them, and once an agreement has been made, they can rate
-                each other using a star-based system and leave comments. The app
-                allows users to publish new homeless pets that need a home,
-                which includes the ability to upload a profile picture, a
-                gallery of photos, a description, and estimated age. Pets are
-                displayed on the home screen based on how long they've been
-                waiting for a home, with those waiting the longest appearing
-                first. Users can apply filters to find pets by type (dogs, cats,
-                or other), size, or location based on GPS and a kilometer input.
-                Another important feature is the ability for users to report any
-                suspicious or inappropriate activity related to pet postings,
-                such as someone trying to sell a pet. Another feature is the
-                admin panel that allows to monitor user statistics and take
-                action if needed, including banning users who have received a
-                high number of reports or deleting pet posts.{" "}
+                The mobile app is designed for both Android and iOS platforms
+                and helps homeless pets find loving homes. Unregistered users
+                can browse through available pets, while registered users can
+                create profiles with pictures and descriptions and contact
+                owners to adopt pets. Users can rate each other using a
+                star-based system and leave comments. The app allows users to
+                publish new pets, including photos, descriptions, and estimated
+                age. Pets are displayed based on how long they've been waiting
+                for a home. Users can apply filters to find pets by type, size,
+                or location based on GPS. The app also features a reporting
+                system for suspicious or inappropriate activity, as well as an
+                admin panel for monitoring user statistics and taking action if
+                necessary.{" "}
               </p>
+              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                Project Role: Mobile Developer
+              </p>
+              <ul className="text-1xl py-2 leading-8 text-gray-800 dark:text-gray-300">
+                <li>Design the App based on Figma design</li>
+                <li>Create the UI </li>
+                <li>Create the Back End and Data Base</li>
+                <li>Connect Front and Back End with Redux Actions</li>
+                <li>Test, maintain, and find bugs in the App</li>
+                <li>Create new features</li>
+                <li>Attend meetings with coworkers, Scrum master and client</li>
+              </ul>
             </div>
           </div>
         </section>
