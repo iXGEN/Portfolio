@@ -13,7 +13,10 @@ import frontEnd from "../public/frontEnd.jpeg";
 import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
 import piDogsImg from "../public/piDogsImg.png";
-import findAhome from "../public/findAhome.png";
+import dogDetail from "../public/dogDetail.png";
+import createDog from "../public/createDog.png";
+import responsive from "../public/responsive.jpeg";
+import findAHome from "../public/findAHome.png";
 
 import { useState } from "react";
 
@@ -417,10 +420,32 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <Image
+                src={dogDetail}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <Image
+                src={createDog}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+
+              <Image
+                src={responsive}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={findAhome}
+                src={findAHome}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
