@@ -32,6 +32,12 @@ export default function Home() {
     await navigator.clipboard.writeText(emailLink);
     alert("Email copied to clipboard!");
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleToggle() {
+    setIsOpen(!isOpen || false);
+  }
   return (
     <div
       className={`font-sans ${
@@ -457,22 +463,35 @@ export default function Home() {
               <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
-                Web application designed to provide information about various
-                dog breeds, with the ability to sort them alphabetically (A-Z or
-                Z-A) or by weight, and filter them based on their temperament or
-                if they were created by a user. The application also includes a
-                search bar to make it easier to find specific breeds. Web
-                application features a fully responsive design, ensuring that
-                users can easily access it on any device, from desktop computers
-                to mobile phones. Users can access more information about
-                different dog breeds, with each breed presented with a detailed
-                card that includes relevant information, from weight, height,
-                lifespan characteristics to temperaments. Users can also create
-                new dog breeds using a controlled form that ensures all
-                necessary information is included. This feature allows users to
-                contribute to the application by adding new breeds.
-              </p>
+              <details
+                className="text-gray-800 dark:text-gray-300 border border-gray-300 rounded-lg p-4"
+                open={isOpen}
+              >
+                <summary
+                  className="text-2xl py-2 cursor-pointer hover:text-blue-500"
+                  onClick={handleToggle}
+                >
+                  {isOpen ? "Click to hide" : "Click to expand"}
+                </summary>
+                <p className="text-2xl py-2 leading-8">
+                  Web application designed to provide information about various
+                  dog breeds, with the ability to sort them alphabetically (A-Z
+                  or Z-A) or by weight, and filter them based on their
+                  temperament or if they were created by a user. The application
+                  also includes a search bar to make it easier to find specific
+                  breeds. Web application features a fully responsive design,
+                  ensuring that users can easily access it on any device, from
+                  desktop computers to mobile phones. Users can access more
+                  information about different dog breeds, with each breed
+                  presented with a detailed card that includes relevant
+                  information, from weight, height, lifespan characteristics to
+                  temperaments. Users can also create new dog breeds using a
+                  controlled form that ensures all necessary information is
+                  included. This feature allows users to contribute to the
+                  application by adding new breeds.
+                </p>
+              </details>
+
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Project Role: Full Stack Developer
               </p>
@@ -518,21 +537,27 @@ export default function Home() {
               <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
-              <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
-                The mobile app is designed for both Android and iOS platforms
-                and helps homeless pets find loving homes. Unregistered users
-                can browse through available pets, while registered users can
-                create profiles with pictures and descriptions and contact
-                owners to adopt pets. Users can rate each other using a
-                star-based system and leave comments. The app allows users to
-                publish new pets, including photos, descriptions, and estimated
-                age. Pets are displayed based on how long they've been waiting
-                for a home. Users can apply filters to find pets by type, size,
-                or location based on GPS. The app also features a reporting
-                system for suspicious or inappropriate activity, as well as an
-                admin panel for monitoring user statistics and taking action if
-                necessary.{" "}
-              </p>
+              <details className="text-gray-800 dark:text-gray-300 border border-gray-300 rounded-lg p-4">
+                <summary className="text-2xl py-2 cursor-pointer hover:text-blue-500">
+                  Click to expand
+                </summary>
+                <p className="text-2xl py-2 leading-8">
+                  The mobile app is designed for both Android and iOS platforms
+                  and helps homeless pets find loving homes. Unregistered users
+                  can browse through available pets, while registered users can
+                  create profiles with pictures and descriptions and contact
+                  owners to adopt pets. Users can rate each other using a
+                  star-based system and leave comments. The app allows users to
+                  publish new pets, including photos, descriptions, and
+                  estimated age. Pets are displayed based on how long they've
+                  been waiting for a home. Users can apply filters to find pets
+                  by type, size, or location based on GPS. The app also features
+                  a reporting system for suspicious or inappropriate activity,
+                  as well as an admin panel for monitoring user statistics and
+                  taking action if necessary.
+                </p>
+              </details>
+
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Project Role: Mobile Developer
               </p>
