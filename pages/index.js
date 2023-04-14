@@ -17,6 +17,7 @@ import dogDetail from "../public/dogDetail.png";
 import createDog from "../public/createDog.png";
 import responsive from "../public/responsive.jpeg";
 import findAHome from "../public/findAHome.png";
+import petDetail from "../public/petDetail.png";
 
 import { useState } from "react";
 
@@ -446,6 +447,13 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={findAHome}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <Image
+                src={petDetail}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
