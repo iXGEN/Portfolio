@@ -9,8 +9,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
 
-const About = () => {
-  const [darkMode, setDarkMode] = useState(false);
+const About = ({ darkMode, setDarkMode }) => {
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
   const twitterLink = "https://twitter.com/IgnaBarraZagal";
   const emailLink = "dev.barrazagal@gmail.com";
@@ -18,6 +17,7 @@ const About = () => {
     await navigator.clipboard.writeText(emailLink);
     alert("Email copied to clipboard!");
   };
+
   return (
     <section className="min-h-screen">
       <nav className="py-10 mb-12 flex justify-between">

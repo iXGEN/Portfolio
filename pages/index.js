@@ -39,7 +39,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <About />
+        <About darkMode={darkMode} setDarkMode={setDarkMode} />
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">
