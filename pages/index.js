@@ -1,14 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiOutlineMail,
-} from "react-icons/ai";
 import Image from "next/image";
-import profilepic from "../public/profilepic.jpeg";
-
 import frontEnd from "../public/frontEnd.jpeg";
 import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
@@ -20,19 +12,12 @@ import findAHome from "../public/findAHome.png";
 import petDetail from "../public/petDetail.png";
 
 import { useState } from "react";
+import About from "@/components/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
-  const twitterLink = "https://twitter.com/IgnaBarraZagal";
-  const emailLink = "dev.barrazagal@gmail.com";
-  const copyEmail = async () => {
-    await navigator.clipboard.writeText(emailLink);
-    alert("Email copied to clipboard!");
-  };
-
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
 
@@ -54,65 +39,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-gray-300">
-              Developed by Igna
-            </h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
-                />
-              </li>
-              <li>
-                <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 md:text-6xl">
-              Ignacio Barra
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
-              Full Stack Developer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-              Hi👋 I would say i'm very friendly and a team worker, i have mixed
-              my skills from psychology to this new career path in tech, i
-              really like traveling and meeting different cultures.
-            </p>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 transform-gpu">
-            <AiFillTwitterCircle
-              onClick={() => window.open(twitterLink, "_blank")}
-              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
-            />
-            <AiFillLinkedin
-              onClick={() => window.open(linkedinLink, "_blank")}
-              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
-            />
-            <AiOutlineMail
-              onClick={copyEmail}
-              className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
-            />
-          </div>
-
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image
-              src={profilepic}
-              alt="Deved Image"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </section>
+        <About />
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">
