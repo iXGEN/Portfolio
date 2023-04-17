@@ -33,10 +33,14 @@ export default function Home() {
     alert("Email copied to clipboard!");
   };
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
-  function handleToggle() {
-    setIsOpen(!isOpen || false);
+  function handleToggle1() {
+    setIsOpen1(!isOpen1);
+  }
+  function handleToggle2() {
+    setIsOpen2(!isOpen2);
   }
   return (
     <div
@@ -463,17 +467,16 @@ export default function Home() {
               <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
-              <details
+
+              <button
+                onClick={handleToggle1}
                 className="text-gray-800 dark:text-gray-300 border border-gray-300 rounded-lg p-4"
-                open={isOpen}
               >
-                <summary
-                  className="text-2xl py-2 cursor-pointer hover:text-blue-500"
-                  onClick={handleToggle}
-                >
-                  {isOpen ? "Click to hide" : "Click to expand"}
-                </summary>
-                <p className="text-2xl py-2 leading-8">
+                {isOpen1 ? "Click to hide" : "Click to expand"}
+              </button>
+              {isOpen1 ? (
+                <p className="text-1xl py-2 leading-8">
+                  {" "}
                   Web application designed to provide information about various
                   dog breeds, with the ability to sort them alphabetically (A-Z
                   or Z-A) or by weight, and filter them based on their
@@ -490,7 +493,7 @@ export default function Home() {
                   included. This feature allows users to contribute to the
                   application by adding new breeds.
                 </p>
-              </details>
+              ) : null}
 
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Project Role: Full Stack Developer
@@ -537,11 +540,16 @@ export default function Home() {
               <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Description:
               </p>
-              <details className="text-gray-800 dark:text-gray-300 border border-gray-300 rounded-lg p-4">
-                <summary className="text-2xl py-2 cursor-pointer hover:text-blue-500">
-                  Click to expand
-                </summary>
-                <p className="text-2xl py-2 leading-8">
+
+              <button
+                onClick={handleToggle2}
+                className="text-gray-800 dark:text-gray-300 border border-gray-300 rounded-lg p-4"
+              >
+                {isOpen2 ? "Click to hide" : "Click to expand"}
+              </button>
+              {isOpen2 ? (
+                <p className="text-1xl py-2 leading-8">
+                  {" "}
                   The mobile app is designed for both Android and iOS platforms
                   and helps homeless pets find loving homes. Unregistered users
                   can browse through available pets, while registered users can
@@ -556,7 +564,7 @@ export default function Home() {
                   as well as an admin panel for monitoring user statistics and
                   taking action if necessary.
                 </p>
-              </details>
+              ) : null}
 
               <p className="text-2xl py-2 leading-8 text-gray-800 dark:text-gray-300">
                 Project Role: Mobile Developer
