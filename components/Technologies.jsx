@@ -6,7 +6,7 @@ import softSkills from "../public/softSkills.jpeg";
 
 const Technologies = () => {
   return (
-    <div className="lg:flex gap-10">
+    <div className="lg:flex gap-10 flex-wrap">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Front End Development
