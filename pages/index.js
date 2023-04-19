@@ -14,7 +14,7 @@ import petDetail from "../public/petDetail.png";
 import { useState } from "react";
 import About from "@/components/About";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] }); // revisar esto
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
