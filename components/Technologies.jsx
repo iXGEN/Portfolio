@@ -5,6 +5,55 @@ import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
 
 const Technologies = () => {
+  const frontEndTechnologies = [
+    {
+      href: "https://en.wikipedia.org/wiki/HTML5",
+      src: "https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg",
+      alt: "HTML5",
+    },
+    {
+      href: "https://www.w3schools.com/css",
+      src: "https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg",
+      alt: "CSS3",
+    },
+    {
+      href: "https://www.javascript.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/javascript-original.svg",
+      alt: "Javascript",
+    },
+    {
+      href: "https://reactjs.org/",
+      src: "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
+      alt: "React",
+    },
+    {
+      href: "https://nextjs.org/",
+      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
+      alt: "NextJS",
+    },
+    {
+      href: "https://reactnative.dev/",
+      src: "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
+      alt: "React Native",
+    },
+    {
+      href: "https://redux.js.org/",
+      src: "https://profilinator.rishav.dev/skills-assets/redux-original.svg",
+      alt: "Redux",
+    },
+    {
+      href: "https://www.tailwindcss.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/tailwindcss.svg",
+      alt: "Tailwind",
+    },
+    {
+      href: "https://getbootstrap.com/docs/3.4/javascript/",
+      src: "https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg",
+      alt: "Bootstrap",
+    },
+    {},
+  ];
+
   return (
     <div className="lg:flex gap-10 flex-wrap">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
