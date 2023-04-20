@@ -53,6 +53,18 @@ const Technologies = () => {
     },
     {},
   ];
+  const workingTools = [
+    {
+      href: "https://www.figma.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/figma-icon.svg",
+      alt: "Figma",
+    },
+    {
+      href: "https://www.trello.com/",
+      src: "https://i.ibb.co/4fGFN9S/trello-logo-removebg-preview.png",
+      alt: "Trello",
+    },
+  ];
 
   return (
     <div className="lg:flex gap-10 flex-wrap">
@@ -74,96 +86,33 @@ const Technologies = () => {
           HTML5, CSS3, Javascript, React, NextJS, React Native, Redux, Tailwind,
           Bootstrap
         </p>
-        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="HTML5"
-          />
-        </a>
-        <a href="https://www.w3schools.com/css" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="CSS3"
-          />
-        </a>
-        <a href="https://www.javascript.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
-            width={50}
-            height={50}
-            alt="Javascript"
-          />
-        </a>
-        <a href="https://reactjs.org/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="React"
-          />
-        </a>
-        <a href="https://nextjs.org/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/nextjs.png"
-            width={50}
-            height={50}
-            alt="NextJS"
-          />
-        </a>
-        <a href="https://reactnative.dev/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="React Native"
-          />
-        </a>
-        <a href="https://redux.js.org/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/redux-original.svg"
-            width={50}
-            height={50}
-            alt="Redux"
-          />
-        </a>
-        <a href="https://www.tailwindcss.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg"
-            width={50}
-            height={50}
-            alt="Tailwind"
-          />
-        </a>
-        <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
-            width={50}
-            height={50}
-            alt="Bootstrap"
-          />
-        </a>
+        {frontEndTechnologies.map((technology, index) => (
+          <a
+            key={index}
+            href={technology.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={technology.src}
+              width={50}
+              height={50}
+              alt={technology.alt}
+            />
+          </a>
+        ))}
         <h4 className="py-4 text-teal-600">Working Tools</h4>
         <p className="text-gray-800 py-1 dark:text-gray-300">Figma, Trello</p>
-        <a href="https://www.figma.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/figma-icon.svg"
-            width={50}
-            height={50}
-            alt="Figma"
-          />
-        </a>{" "}
-        <a href="https://www.trello.com/" target="_blank">
-          <Image
-            src="https://i.ibb.co/4fGFN9S/trello-logo-removebg-preview.png"
-            width={70}
-            height={70}
-            alt="Trello"
-          />
-        </a>
+        {workingTools.map((tool, index) => (
+          <a
+            key={index}
+            href={tool.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={tool.src} width={50} height={50} alt={tool.alt} />
+          </a>
+        ))}
       </div>
 
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
