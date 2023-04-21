@@ -66,6 +66,8 @@ const Technologies = () => {
     },
   ];
 
+  //data para el back y other skills
+
   return (
     <div className="lg:flex gap-10 flex-wrap">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
