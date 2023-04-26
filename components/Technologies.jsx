@@ -51,7 +51,6 @@ const Technologies = () => {
       src: "https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg",
       alt: "Bootstrap",
     },
-    {},
   ];
   const workingTools = [
     {
@@ -65,8 +64,6 @@ const Technologies = () => {
       alt: "Trello",
     },
   ];
-
-  //data para el back y other skills
 
   const backEndTechnologies = [
     {
@@ -120,6 +117,13 @@ const Technologies = () => {
       alt: "Github",
     },
   ];
+  const softSkillsArr = [
+    "Effective Communication",
+    "Team Worker",
+    "Self Taught",
+    "Empathy",
+    "Open-Mindedness",
+  ];
 
   return (
     <div className="lg:flex gap-10 flex-wrap">
@@ -127,12 +131,8 @@ const Technologies = () => {
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Front End Development
         </h3>
-        <Image
-          src={frontEnd}
-          width={250}
-          height={250}
-          className="rounded-full"
-        />
+        <img src={frontEnd} width={250} height={250} className="rounded-full" />
+
         <p className="py-2 dark:text-gray-300">
           Creating functional and beautiful interfaces with Responsive Design
         </p>
@@ -242,13 +242,12 @@ const Technologies = () => {
           Creating functional and beautiful interfaces with Responsive Design
         </p>
         <h4 className="py-4 text-teal-600">Soft Skills</h4>
-        <p className="text-gray-800 py-1 dark:text-gray-300">
-          Effective Communication
-        </p>
-        <p className="text-gray-800 py-1 dark:text-gray-300">Team Worker</p>
-        <p className="text-gray-800 py-1 dark:text-gray-300">Self taught</p>
-        <p className="text-gray-800 py-1 dark:text-gray-300">Empathy</p>
-        <p className="text-gray-800 py-1 dark:text-gray-300">Open-Mindedness</p>
+
+        {softSkillsArr.map((el, index) => (
+          <p key={index} className="text-gray-800 py-1 dark:text-gray-300">
+            {el}
+          </p>
+        ))}
 
         <h4 className="py-4 text-teal-600">Version control</h4>
         <p className="text-gray-800 py-1 dark:text-gray-300">GIT, Github</p>
