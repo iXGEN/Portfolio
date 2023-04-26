@@ -95,7 +95,31 @@ const Technologies = () => {
       alt: "MongoDB",
     },
   ];
-  const cloudDevOpsTechnologies = [{}];
+  const cloudDevOpsTechnologies = [
+    {
+      href: "https://aws.amazon.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg",
+      alt: "Amazon Web Services",
+    },
+    {
+      href: "https://firebase.google.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/firebase.png",
+      alt: "Firebase",
+    },
+  ];
+
+  const versionControl = [
+    {
+      href: "https://git-scm.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg",
+      alt: "GIT",
+    },
+    {
+      href: "https://github.com/iXGEN",
+      src: "https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.jpg",
+      alt: "Github",
+    },
+  ];
 
   return (
     <div className="lg:flex gap-10 flex-wrap">
@@ -187,23 +211,21 @@ const Technologies = () => {
         <p className="text-gray-800 py-1 dark:text-gray-300">
           Amazon Web Services, Firebase
         </p>
-        <a href="https://aws.amazon.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="Amazon Web Services"
-          />
-        </a>
-
-        <a href="https://aws.amazon.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/firebase.png"
-            width={50}
-            height={50}
-            alt="Firebase"
-          />
-        </a>
+        {cloudDevOpsTechnologies.map((technology, index) => (
+          <a
+            key={index}
+            href={technology.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={technology.src}
+              width={50}
+              height={50}
+              alt={technology.alt}
+            />
+          </a>
+        ))}
       </div>
 
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
@@ -230,22 +252,21 @@ const Technologies = () => {
 
         <h4 className="py-4 text-teal-600">Version control</h4>
         <p className="text-gray-800 py-1 dark:text-gray-300">GIT, Github</p>
-        <a href="https://git-scm.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg"
-            width={50}
-            height={50}
-            alt="GIT"
-          />
-        </a>
-        <a href="https://github.com/iXGEN" target="_blank">
-          <Image
-            src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.jpg"
-            width={50}
-            height={50}
-            alt="Github"
-          />
-        </a>
+        {versionControl.map((technology, index) => (
+          <a
+            key={index}
+            href={technology.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={technology.src}
+              width={50}
+              height={50}
+              alt={technology.alt}
+            />
+          </a>
+        ))}
       </div>
     </div>
   );
