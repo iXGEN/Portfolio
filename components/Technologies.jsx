@@ -68,6 +68,35 @@ const Technologies = () => {
 
   //data para el back y other skills
 
+  const backEndTechnologies = [
+    {
+      href: "https://nodejs.org",
+      src: "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg",
+      alt: "NodeJS",
+    },
+    {
+      href: "https://expressjs.com",
+      src: "https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg",
+      alt: "Express",
+    },
+    {
+      href: "https://www.postgresql.org/",
+      src: "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg",
+      alt: "PostgreSQL",
+    },
+    {
+      href: "https://www.mysql.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg",
+      alt: "MySQL",
+    },
+    {
+      href: "https://www.mongodb.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg",
+      alt: "MongoDB",
+    },
+  ];
+  const cloudDevOpsTechnologies = [{}];
+
   return (
     <div className="lg:flex gap-10 flex-wrap">
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
@@ -137,50 +166,21 @@ const Technologies = () => {
         <p className="text-gray-800 py-1 dark:text-gray-300">
           NodeJS, Express, PostgreSQL, MySQL, MongoDB
         </p>
-        <a href="https://nodejs.org" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="NodeJS"
-          />
-        </a>
-
-        <a href="https://expressjs.com" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="Express"
-          />
-        </a>
-
-        <a href="https://www.postgresql.org/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="PostgreSQL"
-          />
-        </a>
-
-        <a href="https://www.mysql.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="MySQL"
-          />
-        </a>
-
-        <a href="https://www.mongodb.com/" target="_blank">
-          <Image
-            src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg"
-            width={50}
-            height={50}
-            alt="MongoDB"
-          />
-        </a>
+        {backEndTechnologies.map((technology, index) => (
+          <a
+            key={index}
+            href={technology.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={technology.src}
+              width={50}
+              height={50}
+              alt={technology.alt}
+            />
+          </a>
+        ))}
 
         <h4 className="py-4 text-teal-600">Cloud / DevOps</h4>
 
