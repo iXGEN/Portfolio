@@ -143,38 +143,46 @@ const Technologies = () => {
         <p className="py-2 dark:text-gray-300">
           Creating functional and beautiful interfaces with Responsive Design
         </p>
-        <h4 className="py-4 text-teal-600">Technologies</h4>
-        <p className="text-gray-800 py-1 dark:text-gray-300">
-          HTML5, CSS3, Javascript, React, NextJS, React Native, Redux, Tailwind,
-          Bootstrap
-        </p>
-        {frontEndTechnologies.map((technology, index) => (
-          <a
-            key={index}
-            href={technology.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={technology.src}
-              alt={technology.alt}
-              width={50}
-              height={50}
-            />
-          </a>
-        ))}
+        <div>
+          <h4 className="py-4 text-teal-600">Technologies</h4>
+          <p className="text-gray-800 py-1 dark:text-gray-300">
+            HTML5, CSS3, Javascript, React, NextJS, React Native, Redux,
+            Tailwind, Bootstrap
+          </p>
+          <div className="flex flex-wrap justify-center">
+            {frontEndTechnologies.map((technology, index) => (
+              <a
+                key={index}
+                href={technology.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-4 my-2"
+              >
+                <Image
+                  src={technology.src}
+                  alt={technology.alt}
+                  width={50}
+                  height={50}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
         <h4 className="py-4 text-teal-600">Working Tools</h4>
         <p className="text-gray-800 py-1 dark:text-gray-300">Figma, Trello</p>
-        {workingTools.map((tool, index) => (
-          <a
-            key={index}
-            href={tool.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src={tool.src} alt={tool.alt} width={50} height={50} />
-          </a>
-        ))}
+        <div className="flex flex-wrap justify-center">
+          {workingTools.map((tool, index) => (
+            <a
+              key={index}
+              href={tool.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-4 my-2"
+            >
+              <Image src={tool.src} alt={tool.alt} width={50} height={50} />
+            </a>
+          ))}
+        </div>
       </div>
 
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
