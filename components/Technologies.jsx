@@ -131,7 +131,12 @@ const Technologies = () => {
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Front End Development
         </h3>
-        <img src={frontEnd} width={250} height={250} className="rounded-full" />
+        <Image
+          src={frontEnd}
+          width={250}
+          height={250}
+          className="rounded-full"
+        />
 
         <p className="py-2 dark:text-gray-300">
           Creating functional and beautiful interfaces with Responsive Design
