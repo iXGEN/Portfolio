@@ -157,9 +157,9 @@ const Technologies = () => {
           >
             <Image
               src={technology.src}
+              alt={technology.alt}
               width={50}
               height={50}
-              alt={technology.alt}
             />
           </a>
         ))}
@@ -172,7 +172,7 @@ const Technologies = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={tool.src} width={50} height={50} alt={tool.alt} />
+            <Image src={tool.src} alt={tool.alt} width={50} height={50} />
           </a>
         ))}
       </div>
@@ -208,9 +208,9 @@ const Technologies = () => {
           >
             <Image
               src={technology.src}
+              alt={technology.alt}
               width={50}
               height={50}
-              alt={technology.alt}
             />
           </a>
         ))}
@@ -229,9 +229,9 @@ const Technologies = () => {
           >
             <Image
               src={technology.src}
+              alt={technology.alt}
               width={50}
               height={50}
-              alt={technology.alt}
             />
           </a>
         ))}
@@ -243,9 +243,9 @@ const Technologies = () => {
         </h3>
         <Image
           src={softSkills}
+          alt="Soft Skills"
           width={250}
           height={250}
-          alt="Soft Skills"
           className="rounded-full"
         />
         <p className="py-2 dark:text-gray-300">
@@ -270,9 +270,9 @@ const Technologies = () => {
           >
             <Image
               src={technology.src}
+              alt={technology.alt}
               width={50}
               height={50}
-              alt={technology.alt}
             />
           </a>
         ))}

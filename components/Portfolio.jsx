@@ -34,30 +34,30 @@ const Portfolio = ({
           <Image
             src={piDogsImg}
             className="rounded-lg object-cover"
+            alt="PIDOGS"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <Image
             src={dogDetail}
             className="rounded-lg object-cover"
+            alt="DOGDETAIL"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <Image
             src={createDog}
             className="rounded-lg object-cover"
+            alt="CREATEDOG"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <Image
             src={responsive}
             className="rounded-lg object-cover"
+            alt="RESPONSIVE"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
             Technologies:
@@ -119,16 +119,17 @@ const Portfolio = ({
           <Image
             src={findAHome}
             className="rounded-lg object-cover"
+            alt="findAHome"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <Image
             src={petDetail}
             className="rounded-lg object-cover"
+            alt="petDetail"
+            priority="low" // or "auto"
             width={"100%"}
             height={"100%"}
-            layout="responsive"
           />
           <p className="text-3xl py-2 leading-8 text-gray-800 dark:text-gray-300">
             Technologies:
