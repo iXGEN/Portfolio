@@ -136,7 +136,7 @@ const Technologies = () => {
           alt="Front End"
           width={250}
           height={250}
-          style="center" // new prop
+          style="center"
           className="rounded-full"
         />
 

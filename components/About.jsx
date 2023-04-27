@@ -10,9 +10,6 @@ import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
 
 const About = ({ darkMode, setDarkMode }) => {
-  /* const About = (props) => {
-    const { darkMode, setDarkMode } = props; */
-
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
   const twitterLink = "https://twitter.com/IgnaBarraZagal";
   const emailLink = "dev.barrazagal@gmail.com";
