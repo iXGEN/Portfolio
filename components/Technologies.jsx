@@ -133,8 +133,10 @@ const Technologies = () => {
         </h3>
         <Image
           src={frontEnd}
+          alt="Front End"
           width={250}
           height={250}
+          style="center" // new prop
           className="rounded-full"
         />
 
@@ -181,8 +183,10 @@ const Technologies = () => {
         </h3>
         <Image
           src={backEnd}
+          alt="Back End"
           width={250}
           height={250}
+          style="center" // new prop
           className="rounded-full"
         />
 
@@ -241,6 +245,7 @@ const Technologies = () => {
           src={softSkills}
           width={250}
           height={250}
+          alt="Soft Skills"
           className="rounded-full"
         />
         <p className="py-2 dark:text-gray-300">

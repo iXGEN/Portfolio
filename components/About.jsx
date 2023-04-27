@@ -76,8 +76,7 @@ const About = ({ darkMode, setDarkMode }) => {
         <Image
           src={profilepic}
           alt="Deved Image"
-          layout="fill"
-          objectFit="cover"
+          className="object-cover object-center w-full h-full"
         />
       </div>
     </section>
