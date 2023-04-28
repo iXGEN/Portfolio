@@ -200,7 +200,7 @@ const Technologies = () => {
 
         <p className="py-2 dark:text-gray-300">
           Building the logic for the server side of the application, creating
-          usefull RESTful API's
+          usefull RESTful APIs
         </p>
         <h4 className="py-4 text-teal-600">Technologies</h4>
 

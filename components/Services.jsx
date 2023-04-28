@@ -1,5 +1,5 @@
 import React from "react";
-import Technologies from "./technologies";
+import Technologies from "./Technologies";
 
 const Services = () => {
   return (
