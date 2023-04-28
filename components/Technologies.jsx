@@ -187,11 +187,7 @@ const Technologies = () => {
         </div>
       </div>
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
-        {" "}
-        {/* b1 */}
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
-          {" "}
-          {/* h */}
           Back End Development
         </h3>
         <Image
@@ -234,21 +230,23 @@ const Technologies = () => {
         <p className="text-gray-800 py-1 dark:text-gray-300">
           Amazon Web Services, Firebase
         </p>
-        {cloudDevOpsTechnologies.map((technology, index) => (
-          <a
-            key={index}
-            href={technology.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={technology.src}
-              alt={technology.alt}
-              width={50}
-              height={50}
-            />
-          </a>
-        ))}
+        <div className="flex flex-wrap justify-center">
+          {cloudDevOpsTechnologies.map((technology, index) => (
+            <a
+              key={index}
+              href={technology.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={technology.src}
+                alt={technology.alt}
+                width={50}
+                height={50}
+              />
+            </a>
+          ))}
+        </div>
       </div>
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
@@ -274,21 +272,23 @@ const Technologies = () => {
 
         <h4 className="py-4 text-teal-600">Version control</h4>
         <p className="text-gray-800 py-1 dark:text-gray-300">GIT, Github</p>
-        {versionControl.map((technology, index) => (
-          <a
-            key={index}
-            href={technology.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={technology.src}
-              alt={technology.alt}
-              width={50}
-              height={50}
-            />
-          </a>
-        ))}
+        <div className="flex flex-wrap justify-center">
+          {versionControl.map((technology, index) => (
+            <a
+              key={index}
+              href={technology.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={technology.src}
+                alt={technology.alt}
+                width={50}
+                height={50}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
