@@ -34,7 +34,7 @@ const Services = () => {
             </li>
           </ul>
           I am committed to delivering high-quality and cost-effective solutions
-          that help businesses achieve their objectives and succeed in today's
+          that help businesses achieve their objectives and succeed in todays
           competitive market.
           <br></br>
           <br></br> With 800+ hours of coding, I am confident working with a

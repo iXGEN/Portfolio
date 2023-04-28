@@ -49,7 +49,7 @@ const About = ({ darkMode, setDarkMode }) => {
           Full Stack Developer
         </h3>
         <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-          Hi👋 I would say i'm very friendly and a team worker, i have mixed my
+          Hi👋 I would say i am very friendly and a team worker, i have mixed my
           skills from psychology to this new career path in tech, i really like
           traveling and meeting different cultures.
         </p>

@@ -158,11 +158,11 @@ const Portfolio = ({
               adopt pets. Users can rate each other using a star-based system
               and leave comments. The app allows users to publish new pets,
               including photos, descriptions, and estimated age. Pets are
-              displayed based on how long they've been waiting for a home. Users
-              can apply filters to find pets by type, size, or location based on
-              GPS. The app also features a reporting system for suspicious or
-              inappropriate activity, as well as an admin panel for monitoring
-              user statistics and taking action if necessary.
+              displayed based on how long they have been waiting for a home.
+              Users can apply filters to find pets by type, size, or location
+              based on GPS. The app also features a reporting system for
+              suspicious or inappropriate activity, as well as an admin panel
+              for monitoring user statistics and taking action if necessary.
             </p>
           ) : null}
 
