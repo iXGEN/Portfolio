@@ -127,6 +127,8 @@ const Technologies = () => {
 
   return (
     <div className="lg:flex gap-10 flex-wrap">
+      {" "}
+      {/* engloba */}
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Front End Development
@@ -184,9 +186,12 @@ const Technologies = () => {
           ))}
         </div>
       </div>
-
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+        {" "}
+        {/* b1 */}
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
+          {" "}
+          {/* h */}
           Back End Development
         </h3>
         <Image
@@ -194,37 +199,38 @@ const Technologies = () => {
           alt="Back End"
           width={250}
           height={250}
-          style="center" // new prop
+          style="center"
           className="rounded-full"
         />
-
         <p className="py-2 dark:text-gray-300">
           Building the logic for the server side of the application, creating
           usefull RESTful APIs
         </p>
-        <h4 className="py-4 text-teal-600">Technologies</h4>
-
-        <p className="text-gray-800 py-1 dark:text-gray-300">
-          NodeJS, Express, PostgreSQL, MySQL, MongoDB
-        </p>
-        {backEndTechnologies.map((technology, index) => (
-          <a
-            key={index}
-            href={technology.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={technology.src}
-              alt={technology.alt}
-              width={50}
-              height={50}
-            />
-          </a>
-        ))}
-
+        <div>
+          <h4 className="py-4 text-teal-600">Technologies</h4>
+          <p className="text-gray-800 py-1 dark:text-gray-300">
+            NodeJS, Express, PostgreSQL, MySQL, MongoDB
+          </p>
+          <div className="flex flex-wrap justify-center">
+            {backEndTechnologies.map((technology, index) => (
+              <a
+                key={index}
+                href={technology.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-4 my-2"
+              >
+                <Image
+                  src={technology.src}
+                  alt={technology.alt}
+                  width={50}
+                  height={50}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
         <h4 className="py-4 text-teal-600">Cloud / DevOps</h4>
-
         <p className="text-gray-800 py-1 dark:text-gray-300">
           Amazon Web Services, Firebase
         </p>
@@ -244,7 +250,6 @@ const Technologies = () => {
           </a>
         ))}
       </div>
-
       <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Other Skills
