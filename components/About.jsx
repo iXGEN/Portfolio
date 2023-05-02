@@ -7,6 +7,7 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
+import Header from "./Header";
 
 const About = ({ darkMode, setDarkMode }) => {
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
@@ -19,7 +20,16 @@ const About = ({ darkMode, setDarkMode }) => {
 
   return (
     <section className="min-h-screen">
-      <nav className="py-10 mb-12 flex justify-between">
+      <nav
+        className="py-10 mb-12 flex justify-between bg-gray-100 dark:bg-gray-800"
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 9999,
+        }}
+      >
         <h1 className="text-xl font-burtons dark:text-gray-300">
           Developed by Igna
         </h1>
@@ -40,8 +50,9 @@ const About = ({ darkMode, setDarkMode }) => {
           </li>
         </ul>
       </nav>
+
       <div className="text-center p-10">
-        <h2 className="text-5xl py-2 text-teal-600 md:text-6xl">
+        <h2 className="text-5xl mt-32 py-2 text-teal-600 md:text-6xl">
           Ignacio Barra
         </h2>
         <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
