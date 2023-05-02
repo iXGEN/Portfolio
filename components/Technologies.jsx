@@ -22,6 +22,11 @@ const Technologies = () => {
       alt: "Javascript",
     },
     {
+      href: "https://wordpress.com/",
+      src: "https://profilinator.rishav.dev/skills-assets/wordpress.png",
+      alt: "Wordpress",
+    },
+    {
       href: "https://reactjs.org/",
       src: "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
       alt: "React",
