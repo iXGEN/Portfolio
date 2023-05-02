@@ -9,8 +9,8 @@ const Services = () => {
           Services I offer 👨‍💻
         </h3>
         <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
-          As a full stack developer, I offer a wide range of services,
-          including:
+          As a Full Stack and Mobile Developer, I offer a wide range of
+          services, including:
           <ul>
             <li>
               Web application development: I can develop web applications using
@@ -33,16 +33,12 @@ const Services = () => {
               running smoothly and efficiently.
             </li>
           </ul>
-          I am committed to delivering high-quality and cost-effective solutions
-          that help businesses achieve their objectives and succeed in todays
-          competitive market.
-          <br></br>
-          <br></br> With 800+ hours of coding, I am confident working with a
-          variety of technologies and frameworks such as{" "}
+          <br></br>I am confident working with a variety of technologies and
+          frameworks such as{" "}
           <span className="text-teal-500">
-            HTML5, CSS3, Javascript, React, NextJS, React Native, Redux,
-            Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL, MongoDB,
-            and many more!
+            HTML5, CSS3, Javascript, Wordpress, React, NextJS, React Native,
+            Redux, Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL,
+            MongoDB, and many more!
           </span>
         </div>
       </div>

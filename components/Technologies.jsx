@@ -38,7 +38,7 @@ const Technologies = () => {
     },
     {
       href: "https://reactnative.dev/",
-      src: "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg",
+      src: "https://hackernoon.com/hn-images/1*ub1DguhAtkCLvhUGuVGr6w.png",
       alt: "React Native",
     },
     {

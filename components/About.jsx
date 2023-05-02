@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -46,12 +45,12 @@ const About = ({ darkMode, setDarkMode }) => {
           Ignacio Barra
         </h2>
         <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-200">
-          Full Stack Developer
+          Front End / Back End / Mobile Developer
         </h3>
         <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
-          Hi👋 I would say i am very friendly and a team worker, i have mixed my
-          skills from psychology to this new career path in tech, i really like
-          traveling and meeting different cultures.
+          Hi👋 I am a friendly person and a team worker, i have mixed my skills
+          from my previous background, psychology to this new career path in
+          tech, i really like traveling and meeting different cultures.
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 transform-gpu">
