@@ -134,7 +134,7 @@ const Technologies = () => {
     <div className="lg:flex gap-10 flex-wrap">
       {" "}
       {/* engloba */}
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 ">
+      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Front End Development
         </h3>
@@ -191,7 +191,7 @@ const Technologies = () => {
           ))}
         </div>
       </div>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Back End Development
         </h3>
@@ -253,7 +253,7 @@ const Technologies = () => {
           ))}
         </div>
       </div>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1">
+      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
         <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
           Other Skills
         </h3>

@@ -21,7 +21,7 @@ const About = ({ darkMode, setDarkMode }) => {
   return (
     <section className="min-h-screen">
       <nav
-        className="py-10 mb-12 flex justify-between bg-gray-100 dark:bg-gray-800"
+        className="py-10 mb-12 flex justify-between bg-gray-200 dark:bg-gray-800"
         style={{
           position: "fixed",
           top: 0,
