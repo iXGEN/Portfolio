@@ -7,7 +7,6 @@ import {
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
-import Header from "./Header";
 
 const About = ({ darkMode, setDarkMode }) => {
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";

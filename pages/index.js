@@ -4,7 +4,6 @@ import { useState } from "react";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
-import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] }); // revisar esto
 
