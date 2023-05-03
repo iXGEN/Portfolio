@@ -44,10 +44,10 @@ const Header = ({ darkMode, setDarkMode }) => {
 
         <li>
           <a
-            className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mr-3"
-            href="#"
+            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mr-3"
+            href="https://drive.google.com/u/0/uc?id=1J66_bn46ZakMuxw6skeJPpGUVfywwdN-&export=download"
           >
-            Resume
+            Download Resume
           </a>
         </li>
         <li>
