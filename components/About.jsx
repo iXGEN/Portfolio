@@ -4,11 +4,11 @@ import {
   AiFillLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
+import Header from "./Header";
 
-const About = ({ darkMode, setDarkMode }) => {
+const About = () => {
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
   const twitterLink = "https://twitter.com/IgnaBarraZagal";
   const emailLink = "dev.barrazagal@gmail.com";
@@ -19,36 +19,7 @@ const About = ({ darkMode, setDarkMode }) => {
 
   return (
     <section className="min-h-screen">
-      <nav
-        className="py-10 mb-12 flex justify-between bg-gray-200 dark:bg-gray-800"
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: 9999,
-        }}
-      >
-        <h1 className="text-xl font-burtons dark:text-gray-300">
-          Developed by Igna
-        </h1>
-        <ul className="flex items-center">
-          <li>
-            <BsFillMoonStarsFill
-              onClick={() => setDarkMode(!darkMode)}
-              className="cursor-pointer text-2xl"
-            />
-          </li>
-          <li>
-            <a
-              className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="#"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Header />
 
       <div className="text-center p-10">
         <h2 className="text-5xl mt-32 py-2 text-teal-600 md:text-6xl">
