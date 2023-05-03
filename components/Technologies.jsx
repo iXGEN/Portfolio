@@ -131,7 +131,7 @@ const Technologies = () => {
   ];
 
   return (
-    <section id="technologies">
+    <section id="technologies" className="pt-16">
       <div className="lg:flex gap-10 flex-wrap">
         {" "}
         {/* engloba */}
