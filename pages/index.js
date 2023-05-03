@@ -2,8 +2,11 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 import About from "@/components/About";
-import Portfolio from "@/components/Portfolio";
+
 import Services from "@/components/Services";
+
+import Portfolio from "@/components/Portfolio";
+import Technologies from "@/components/Technologies";
 
 const inter = Inter({ subsets: ["latin"] }); // revisar esto
 
@@ -33,6 +36,8 @@ export default function Home() {
         <About darkMode={darkMode} setDarkMode={setDarkMode} />
 
         <Services />
+
+        <Technologies />
 
         <Portfolio
           handleToggle1={handleToggle1}

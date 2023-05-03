@@ -131,39 +131,118 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="lg:flex gap-10 flex-wrap">
-      {" "}
-      {/* engloba */}
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
-        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
-          Front End Development
-        </h3>
-        <Image
-          src={frontEnd}
-          alt="Front End"
-          width={250}
-          height={250}
-          style="center"
-          className="rounded-full"
-        />
+    <section id="technologies">
+      <div className="lg:flex gap-10 flex-wrap">
+        {" "}
+        {/* engloba */}
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
+          <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
+            Front End Development
+          </h3>
+          <Image
+            src={frontEnd}
+            alt="Front End"
+            width={250}
+            height={250}
+            style="center"
+            className="rounded-full"
+          />
 
-        <p className="py-2 dark:text-gray-300">
-          Creating functional and beautiful interfaces with Responsive Design
-        </p>
-        <div>
-          <h4 className="py-4 text-teal-600">Technologies</h4>
+          <p className="py-2 dark:text-gray-300">
+            Creating functional and beautiful interfaces with Responsive Design
+          </p>
+          <div>
+            <h4 className="py-4 text-teal-600">Technologies</h4>
+            <p className="text-gray-800 py-1 dark:text-gray-300">
+              HTML5, CSS3, Javascript, React, NextJS, React Native, Redux,
+              Tailwind, Bootstrap
+            </p>
+            <div className="flex flex-wrap justify-center">
+              {frontEndTechnologies.map((technology, index) => (
+                <a
+                  key={index}
+                  href={technology.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-4 my-2"
+                >
+                  <Image
+                    src={technology.src}
+                    alt={technology.alt}
+                    width={50}
+                    height={50}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+          <h4 className="py-4 text-teal-600">Working Tools</h4>
+          <p className="text-gray-800 py-1 dark:text-gray-300">Figma, Trello</p>
+          <div className="flex flex-wrap justify-center">
+            {workingTools.map((tool, index) => (
+              <a
+                key={index}
+                href={tool.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-4 my-2"
+              >
+                <Image src={tool.src} alt={tool.alt} width={50} height={50} />
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
+          <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
+            Back End Development
+          </h3>
+          <Image
+            src={backEnd}
+            alt="Back End"
+            width={250}
+            height={250}
+            style="center"
+            className="rounded-full"
+          />
+          <p className="py-2 dark:text-gray-300">
+            Building the logic for the server side of the application, creating
+            usefull RESTful APIs
+          </p>
+          <div>
+            <h4 className="py-4 text-teal-600">Technologies</h4>
+            <p className="text-gray-800 py-1 dark:text-gray-300">
+              NodeJS, Express, PostgreSQL, MySQL, MongoDB
+            </p>
+            <div className="flex flex-wrap justify-center">
+              {backEndTechnologies.map((technology, index) => (
+                <a
+                  key={index}
+                  href={technology.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-4 my-2"
+                >
+                  <Image
+                    src={technology.src}
+                    alt={technology.alt}
+                    width={50}
+                    height={50}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+          <h4 className="py-4 text-teal-600">Cloud / DevOps</h4>
           <p className="text-gray-800 py-1 dark:text-gray-300">
-            HTML5, CSS3, Javascript, React, NextJS, React Native, Redux,
-            Tailwind, Bootstrap
+            Amazon Web Services, Firebase
           </p>
           <div className="flex flex-wrap justify-center">
-            {frontEndTechnologies.map((technology, index) => (
+            {cloudDevOpsTechnologies.map((technology, index) => (
               <a
                 key={index}
                 href={technology.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-4 my-2"
               >
                 <Image
                   src={technology.src}
@@ -175,51 +254,37 @@ const Technologies = () => {
             ))}
           </div>
         </div>
-        <h4 className="py-4 text-teal-600">Working Tools</h4>
-        <p className="text-gray-800 py-1 dark:text-gray-300">Figma, Trello</p>
-        <div className="flex flex-wrap justify-center">
-          {workingTools.map((tool, index) => (
-            <a
-              key={index}
-              href={tool.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mx-4 my-2"
-            >
-              <Image src={tool.src} alt={tool.alt} width={50} height={50} />
-            </a>
-          ))}
-        </div>
-      </div>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
-        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
-          Back End Development
-        </h3>
-        <Image
-          src={backEnd}
-          alt="Back End"
-          width={250}
-          height={250}
-          style="center"
-          className="rounded-full"
-        />
-        <p className="py-2 dark:text-gray-300">
-          Building the logic for the server side of the application, creating
-          usefull RESTful APIs
-        </p>
-        <div>
-          <h4 className="py-4 text-teal-600">Technologies</h4>
-          <p className="text-gray-800 py-1 dark:text-gray-300">
-            NodeJS, Express, PostgreSQL, MySQL, MongoDB
+        <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
+          <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
+            Other Skills
+          </h3>
+          <Image
+            src={softSkills}
+            alt="Soft Skills"
+            width={250}
+            height={250}
+            className="rounded-full"
+          />
+          <p className="py-2 dark:text-gray-300">
+            Creating functional and beautiful interfaces with Responsive Design
           </p>
+          <h4 className="py-4 text-teal-600">Soft Skills</h4>
+
+          {softSkillsArr.map((el, index) => (
+            <p key={index} className="text-gray-800 py-1 dark:text-gray-300">
+              {el}
+            </p>
+          ))}
+
+          <h4 className="py-4 text-teal-600">Version control</h4>
+          <p className="text-gray-800 py-1 dark:text-gray-300">GIT, Github</p>
           <div className="flex flex-wrap justify-center">
-            {backEndTechnologies.map((technology, index) => (
+            {versionControl.map((technology, index) => (
               <a
                 key={index}
                 href={technology.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-4 my-2"
               >
                 <Image
                   src={technology.src}
@@ -231,71 +296,8 @@ const Technologies = () => {
             ))}
           </div>
         </div>
-        <h4 className="py-4 text-teal-600">Cloud / DevOps</h4>
-        <p className="text-gray-800 py-1 dark:text-gray-300">
-          Amazon Web Services, Firebase
-        </p>
-        <div className="flex flex-wrap justify-center">
-          {cloudDevOpsTechnologies.map((technology, index) => (
-            <a
-              key={index}
-              href={technology.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={technology.src}
-                alt={technology.alt}
-                width={50}
-                height={50}
-              />
-            </a>
-          ))}
-        </div>
       </div>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 bg-gray-300 dark:bg-gray-700">
-        <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-300">
-          Other Skills
-        </h3>
-        <Image
-          src={softSkills}
-          alt="Soft Skills"
-          width={250}
-          height={250}
-          className="rounded-full"
-        />
-        <p className="py-2 dark:text-gray-300">
-          Creating functional and beautiful interfaces with Responsive Design
-        </p>
-        <h4 className="py-4 text-teal-600">Soft Skills</h4>
-
-        {softSkillsArr.map((el, index) => (
-          <p key={index} className="text-gray-800 py-1 dark:text-gray-300">
-            {el}
-          </p>
-        ))}
-
-        <h4 className="py-4 text-teal-600">Version control</h4>
-        <p className="text-gray-800 py-1 dark:text-gray-300">GIT, Github</p>
-        <div className="flex flex-wrap justify-center">
-          {versionControl.map((technology, index) => (
-            <a
-              key={index}
-              href={technology.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={technology.src}
-                alt={technology.alt}
-                width={50}
-                height={50}
-              />
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

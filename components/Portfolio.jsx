@@ -16,7 +16,7 @@ const Portfolio = ({
   setIsOpen2,
 }) => {
   return (
-    <section>
+    <section id="portfolio">
       <div>
         <h3 className="text-6xl py-1 dark:text-gray-300">Portfolio</h3>
         <p className="text-4xl py-2 leading-8 text-gray-800 dark:text-gray-300">

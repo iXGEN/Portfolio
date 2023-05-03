@@ -1,11 +1,10 @@
 import React from "react";
-import Technologies from "./Technologies";
 
 const Services = () => {
   return (
-    <section>
+    <section id="services">
       <div>
-        <h3 className="text-3xl py-1 dark:text-gray-300">
+        <h3 className="text-3xl py-1  dark:text-gray-300">
           Services I offer 👨‍💻
         </h3>
         <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
@@ -42,7 +41,6 @@ const Services = () => {
           </span>
         </div>
       </div>
-      <Technologies />
     </section>
   );
 };
