@@ -6,6 +6,7 @@ import createDog from "../public/createDog.png";
 import responsive from "../public/responsive.jpeg";
 import findAHome from "../public/findAHome.png";
 import petDetail from "../public/petDetail.png";
+import Link from "next/link";
 
 const Portfolio = ({
   handleToggle1,
@@ -108,6 +109,9 @@ const Portfolio = ({
             <li>Test, maintain, and find bugs in the App</li>
             <li>Deploy the Web App</li>
           </ul>
+          <Link href="/thedogapi">
+            <button>See more details</button>
+          </Link>
         </div>
         <div className="basis-1/3 flex-1">
           <a href="https://www.youtube.com/watch?v=-TH3UsyZDH8&ab_channel=Ignacio">
@@ -178,6 +182,9 @@ const Portfolio = ({
             <li>Create new features</li>
             <li>Attend meetings with coworkers, Scrum master and client</li>
           </ul>
+          <Link href="/findahome">
+            <button>See more details</button>
+          </Link>
         </div>
       </div>
     </section>
