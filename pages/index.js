@@ -2,16 +2,13 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 import About from "@/components/About";
-
 import Services from "@/components/Services";
-
 import Portfolio from "@/components/Portfolio";
 import Technologies from "@/components/Technologies";
 
 const inter = Inter({ subsets: ["latin"] }); // revisar esto
 
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+export default function Home({ darkMode, setDarkMode }) {
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
 
@@ -33,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico"></link>
       </Head>
       <main className="bg-gray-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <About darkMode={darkMode} setDarkMode={setDarkMode} />
+        <About />
 
         <Services />
 

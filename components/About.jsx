@@ -6,9 +6,8 @@ import {
 } from "react-icons/ai";
 import profilepic from "../public/profilepic.jpeg";
 import Image from "next/image";
-import Header from "./Header";
 
-const About = ({ darkMode, setDarkMode }) => {
+const About = () => {
   const linkedinLink = "https://www.linkedin.com/in/ignaciobarra-zagal/";
   const twitterLink = "https://twitter.com/IgnaBarraZagal";
   const emailLink = "dev.barrazagal@gmail.com";
@@ -19,8 +18,6 @@ const About = ({ darkMode, setDarkMode }) => {
 
   return (
     <section className="min-h-screen">
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-
       <div className="text-center p-10">
         <h2 className="text-5xl mt-32 py-2 text-teal-600 md:text-6xl">
           Ignacio Barra
