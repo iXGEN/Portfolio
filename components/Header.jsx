@@ -5,7 +5,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   return (
     <nav
       className={`py-5 mb-12 flex justify-between ${
-        !darkMode ? "bg-gray-300" : "bg-gray-600"
+        !darkMode ? "bg-gray-300" : "bg-gray-700"
       }`}
       style={{
         position: "fixed",
