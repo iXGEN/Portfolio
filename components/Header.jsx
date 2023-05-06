@@ -4,7 +4,9 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 const Header = ({ darkMode, setDarkMode }) => {
   return (
     <nav
-      className={`py-5 mb-12 flex justify-between bg-blue-600 dark:bg-red-600`}
+      className={`py-5 mb-12 flex justify-between ${
+        !darkMode ? "bg-gray-300" : "bg-gray-600"
+      }`}
       style={{
         position: "fixed",
         top: 0,
