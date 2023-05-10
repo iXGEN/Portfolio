@@ -22,6 +22,11 @@ const Technologies = () => {
       alt: "Javascript",
     },
     {
+      href: "https://www.typescriptlang.org/",
+      src: "https://profilinator.rishav.dev/skills-assets/typescript-original.svg",
+      alt: "Typescript",
+    },
+    {
       href: "https://wordpress.com/",
       src: "https://profilinator.rishav.dev/skills-assets/wordpress.png",
       alt: "Wordpress",
