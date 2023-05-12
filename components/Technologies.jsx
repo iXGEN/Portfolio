@@ -4,7 +4,7 @@ import frontEnd from "../public/frontEnd.jpeg";
 import backEnd from "../public/backEnd.jpg";
 import softSkills from "../public/softSkills.jpeg";
 
-const Technologies = () => { //techs
+const Technologies = () => {
   const frontEndTechnologies = [
     {
       href: "https://en.wikipedia.org/wiki/HTML5",
