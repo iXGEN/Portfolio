@@ -1,8 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-
 const Header = ({ darkMode, setDarkMode }) => {
-  // también ponerlo en las rutas de proyectos y que te lleve a las páginas correspondientes
   return (
     <nav
       className={`py-5 mb-12 flex justify-between ${
