@@ -1,5 +1,8 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+
+/*Tengo que buscar la forma de hacer que el Header te redireccione al "/" y luego a la sección deseada, cargando bien, no quedando en blanco */
+
 const Header = ({ darkMode, setDarkMode }) => {
   return (
     <nav
