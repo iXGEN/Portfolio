@@ -7,6 +7,7 @@ import createDog from "../public/createDog.png";
 import responsive from "../public/responsive.jpeg";
 
 const Thedogapi = () => {
+  /* recordar que puede traer problemas que haya cambiado de "thedogapi" a "Thedogapi" */
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
 
@@ -18,16 +19,6 @@ const Thedogapi = () => {
   }
   return (
     <>
-      <div className="mt-20">
-        <h1>Here are the details of The Dog API Project!</h1>
-        <h2>More details:</h2>
-        <p>Aquí van todas las imágenes del proyecto</p>
-        <p>Descripción detallada</p>
-        <p>descripción de lo que yo hice</p>
-        <p>íconos de las tecnologías</p>
-        <p>Nombres de las tecnologías</p>
-        <p>Sumar todo lo que este en inicio respecto a este proyecto</p>
-      </div>
       <div>
         <div className="basis-1/3 flex-1">
           <a href="https://pi-dogs-ixgen.vercel.app/">
