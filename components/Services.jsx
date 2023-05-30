@@ -19,27 +19,24 @@ const Services = () => {
             ]}
             typeSpeed={10} // Velocidad de escritura en milisegundos
             backSpeed={10} // Velocidad de borrado en milisegundos
-            loop
+            backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
+            loop={false} // No se repetirá la animación
           />
 
-          <br></br>
+          <br />
 
-          {
-            <Typed
-              strings={[
-                "I am confident working with a variety of technologies and frameworks such as",
-              ]}
-              typeSpeed={10} // Velocidad de escritura en milisegundos
-              backSpeed={10} // Velocidad de borrado en milisegundos
-              loop
-            />
-          }
+          <Typed
+            strings={[
+              "I am confident working with a variety of technologies and frameworks such as",
+              "HTML5, CSS3, Javascript, Wordpress, React, NextJS, React Native, Redux, Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL, MongoDB and many more",
+            ]}
+            typeSpeed={10}
+            backSpeed={10}
+            backDelay={1000}
+            loop={false} // No se repetirá la animación
+          />
 
-          <span className="text-teal-500">
-            HTML5, CSS3, Javascript, Wordpress, React, NextJS, React Native,
-            Redux, Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL,
-            MongoDB, and many more!
-          </span>
+          <span className="text-teal-500"></span>
         </div>
       </div>
     </section>
