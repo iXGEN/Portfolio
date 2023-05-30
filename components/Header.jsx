@@ -1,7 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-
-/*Tengo que buscar la forma de hacer que el Header te redireccione al "/" y luego a la sección deseada, cargando bien, no quedando en blanco */
+import { FaCode } from "react-icons/fa";
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (
@@ -17,13 +16,22 @@ const Header = ({ darkMode, setDarkMode }) => {
         zIndex: 9999,
       }}
     >
-      <h1 className="text-xl font-burtons dark:text-gray-300">
-        Developed by Igna
-      </h1>
+      <div className="flex items-center">
+        <FaCode className="text-2xl text-gray-600 mr-2" />
+        <h1
+          className={`text-xl font-burtons ${
+            darkMode ? "text-white" : "text-gray-800"
+          }`}
+        >
+          Developed by Igna
+        </h1>
+      </div>
       <ul className="flex items-center">
         <li>
           <a
-            className="text-gray-600 hover:text-gray-900 px-3 py-2"
+            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-600"
+            }`}
             href="#services"
           >
             Services
@@ -31,7 +39,9 @@ const Header = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a
-            className="text-gray-600 hover:text-gray-900 px-3 py-2"
+            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-600"
+            }`}
             href="#technologies"
           >
             Technologies
@@ -39,7 +49,9 @@ const Header = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a
-            className="text-gray-600 hover:text-gray-900 px-3 py-2"
+            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-600"
+            }`}
             href="#portfolio"
           >
             Portfolio
@@ -48,7 +60,9 @@ const Header = ({ darkMode, setDarkMode }) => {
 
         <li>
           <a
-            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mr-3"
+            className={`bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md mr-3 transition-colors hover:from-cyan-600 hover:to-teal-600 ${
+              darkMode ? "bg-gray-800" : ""
+            }`}
             href="https://drive.google.com/u/0/uc?id=1J66_bn46ZakMuxw6skeJPpGUVfywwdN-&export=download"
           >
             Download Resume
@@ -57,7 +71,7 @@ const Header = ({ darkMode, setDarkMode }) => {
         <li>
           <BsFillMoonStarsFill
             onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer text-2xl mr-5"
+            className="cursor-pointer text-2xl mr-5 transition-colors hover:text-yellow-500"
           />
         </li>
       </ul>
