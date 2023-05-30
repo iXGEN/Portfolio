@@ -29,8 +29,8 @@ const Header = ({ darkMode, setDarkMode }) => {
       <ul className="flex items-center">
         <li>
           <a
-            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
-              darkMode ? "text-white" : "text-gray-600"
+            className={`text-gray-300 hover:text-gray-300 hover:border-cyan-500 hover:border-b-2 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-300"
             }`}
             href="#services"
           >
@@ -39,8 +39,8 @@ const Header = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a
-            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
-              darkMode ? "text-white" : "text-gray-600"
+            className={`text-gray-300 hover:text-gray-300 hover:border-cyan-500 hover:border-b-2 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-300"
             }`}
             href="#technologies"
           >
@@ -49,8 +49,8 @@ const Header = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a
-            className={`text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors ${
-              darkMode ? "text-white" : "text-gray-600"
+            className={`text-gray-300 hover:text-gray-300 hover:border-cyan-500 hover:border-b-2 px-3 py-2 transition-colors ${
+              darkMode ? "text-white" : "text-gray-300"
             }`}
             href="#portfolio"
           >
