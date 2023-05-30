@@ -3,10 +3,6 @@ import Typed from "react-typed";
 
 const Services = () => {
   const stringsArr = [
-    "As a Full Stack and Mobile Developer, I offer a wide range of services, including:",
-    "Web application development: I can develop web applications using a variety of programming languages, frameworks, and platforms to create highly functional and responsive web applications.",
-    "Mobile application development: I can build mobile applications that are optimized for different platforms like Android and iOS to provide users with a seamless experience.",
-    "API development and integration: I can develop APIs to integrate your software applications with other third-party applications to improve functionality and efficiency.",
     "Maintenance and support: I can provide ongoing maintenance and support services to ensure that your software applications are running smoothly and efficiently.",
   ];
 
@@ -18,14 +14,63 @@ const Services = () => {
         </h3>
         <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-300">
           <Typed
-            strings={stringsArr}
-            typeSpeed={100} // Velocidad de escritura en milisegundos
-            backSpeed={1000} // Velocidad de borrado en milisegundos
+            strings={[
+              "As a Full Stack and Mobile Developer, I offer a wide range of services, including:",
+            ]}
+            typeSpeed={10} // Velocidad de escritura en milisegundos
+            backSpeed={1} // Velocidad de borrado en milisegundos
             backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
             loop={false} // No se repetirá la animación
+            showCursor={false} // Ocultar la barra al final de la animación
+          />
+          <br></br>
+          <Typed
+            strings={[
+              "Web application development: I can develop web applications using a variety of programming languages, frameworks, and platforms to create highly functional and responsive web applications.",
+            ]}
+            typeSpeed={50} // Velocidad de escritura en milisegundos
+            backSpeed={1} // Velocidad de borrado en milisegundos
+            backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
+            loop={false} // No se repetirá la animación
+            showCursor={false}
           />
 
           <br />
+          <Typed
+            strings={[
+              "Mobile application development: I can build mobile applications that are optimized for different platforms like Android and iOS to provide users with a seamless experience.",
+            ]}
+            typeSpeed={50} // Velocidad de escritura en milisegundos
+            backSpeed={1} // Velocidad de borrado en milisegundos
+            backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
+            loop={false} // No se repetirá la animación
+            showCursor={false}
+          />
+          <br />
+          <Typed
+            strings={[
+              "API development and integration: I can develop APIs to integrate your software applications with other third-party applications to improve functionality and efficiency.",
+            ]}
+            typeSpeed={50} // Velocidad de escritura en milisegundos
+            backSpeed={1} // Velocidad de borrado en milisegundos
+            backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
+            loop={false} // No se repetirá la animación
+            showCursor={false}
+          />
+          <br />
+          <Typed
+            strings={[
+              "Maintenance and support: I can provide ongoing maintenance and support services to ensure that your software applications are running smoothly and efficiently.",
+            ]}
+            typeSpeed={50} // Velocidad de escritura en milisegundos
+            backSpeed={1} // Velocidad de borrado en milisegundos
+            backDelay={1000} // Retraso antes de iniciar el borrado en milisegundos
+            loop={false} // No se repetirá la animación
+            showCursor={false}
+          />
+
+          <br></br>
+          <br></br>
 
           <Typed
             strings={[
@@ -35,13 +80,15 @@ const Services = () => {
             backSpeed={10}
             backDelay={1000}
             loop={false}
+            showCursor={false}
           />
           <br></br>
+
           <Typed
             strings={[
-              "HTML5, CSS3, Javascript, Wordpress, React, NextJS, React Native, Redux, Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL, MongoDB and many more",
+              "HTML5, CSS3, Javascript, Wordpress, React, NextJS, React Native, Redux, Tailwind, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MySQL, MongoDB and many more!",
             ]}
-            typeSpeed={10}
+            typeSpeed={100}
             backSpeed={10}
             backDelay={1000}
             loop={false}
