@@ -32,14 +32,12 @@ const About = () => {
         </p>
       </div>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 transform-gpu">
-        <AiFillTwitterCircle
-          onClick={() => window.open(twitterLink, "_blank")}
-          className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
-        />
-        <AiFillLinkedin
-          onClick={() => window.open(linkedinLink, "_blank")}
-          className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
-        />
+        <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+          <AiFillTwitterCircle className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125" />
+        </a>
+        <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+          <AiFillLinkedin className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125" />
+        </a>
         <AiOutlineMail
           onClick={copyEmail}
           className="text-6xl mt-6 mr-4 transition duration-200 ease-in-out transform cursor-pointer hover:scale-125"
